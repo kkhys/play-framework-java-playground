@@ -1,0 +1,11 @@
+{
+  "name": "play-framework-java-playground",
+  "private": true,
+  "devDependencies": {
+    "tailwindcss": "3.4.1"
+  },
+  "scripts": {
+    "dev": "tailwindcss -i public/stylesheets/input.css -o public/stylesheets/output.css --watch",
+    "build": "tailwindcss -i public/stylesheets/input.css -o public/stylesheets/output.css --minify"
+  }
+}
