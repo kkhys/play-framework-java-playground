@@ -2,8 +2,8 @@
   "name": "play-framework-java-playground",
   "private": true,
   "scripts": {
-    "dev": "vite build --watch --emptyOutDir",
-    "build": "vite build --emptyOutDir",
+    "dev": "tailwindcss -i ../public/stylesheets/input.css -o ../public/stylesheets/main.css --watch=always && vite build --watch --emptyOutDir",
+    "build": "tailwindcss -i ../public/stylesheets/input.css -o ../public/stylesheets/main.css --minify && vite build --emptyOutDir",
     "format": "prettier --write \"**/*.{js,cjs,mjs,ts,tsx,json}\"",
     "typecheck": "tsc --noEmit"
   },
@@ -11,6 +11,7 @@
     "@ianvs/prettier-plugin-sort-imports": "4.1.1",
     "@types/node": "20.11.17",
     "prettier": "3.2.5",
+    "tailwindcss": "3.4.1",
     "typescript": "5.3.3",
     "vite": "5.1.1"
   }
