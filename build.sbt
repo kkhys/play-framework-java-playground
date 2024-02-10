@@ -1,5 +1,6 @@
 name := """play-framework-java-playground"""
 organization := "me.kkhys"
+maintainer := "hi@kkhys.me"
 
 ThisBuild / scalaVersion := "3.3.1"
 
