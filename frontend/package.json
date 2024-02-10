@@ -2,8 +2,8 @@
   "name": "play-framework-java-playground",
   "private": true,
   "scripts": {
-    "dev": "vite build --watch --emptyOutDir",
-    "build": "vite build --emptyOutDir",
+    "vite:dev": "vite build --watch --emptyOutDir",
+    "vite:build": "vite build --emptyOutDir",
     "tailwind:dev": "tailwindcss -i ../public/stylesheets/input.css -o ../public/stylesheets/main.css --watch=always",
     "tailwind:build": "tailwindcss -i ../public/stylesheets/input.css -o ../public/stylesheets/main.css --minify",
     "format": "prettier --write \"**/*.{js,cjs,mjs,ts,tsx,json}\"",
