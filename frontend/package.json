@@ -2,6 +2,8 @@
   "name": "play-framework-java-playground",
   "private": true,
   "scripts": {
+    "dev": "vite build --watch --emptyOutDir",
+    "build": "vite build --emptyOutDir",
     "format": "prettier --write \"**/*.{js,cjs,mjs,ts,tsx,json}\"",
     "typecheck": "tsc --noEmit"
   },
