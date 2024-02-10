@@ -1,4 +1,11 @@
 {
   "name": "play-framework-java-playground",
-  "private": true
+  "private": true,
+  "scripts": {
+    "format": "prettier --write \"**/*.{js,cjs,mjs,ts,tsx,json}\""
+  },
+  "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "4.1.1",
+    "prettier": "3.2.5"
+  }
 }
