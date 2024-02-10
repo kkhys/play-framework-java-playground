@@ -17,8 +17,9 @@
               <option name="confDir" value="$PROJECT_DIR$/app" />
               <option name="templateImports">
                 <list>
-                  <option value="_root_.play.twirl.api.TwirlFeatureImports._" />
-                  <option value="_root_.play.twirl.api.TwirlHelperImports._" />
+                  <option value="_root_.play.twirl.api.TwirlFeatureImports.*" />
+                  <option value="_root_.play.twirl.api.TwirlHelperImports.*" />
+                  <option value="scala.language.adhocExtensions" />
                   <option value="_root_.play.twirl.api.Html" />
                   <option value="_root_.play.twirl.api.JavaScript" />
                   <option value="_root_.play.twirl.api.Txt" />
