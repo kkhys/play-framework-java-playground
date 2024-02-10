@@ -1,17 +1,23 @@
-const a = "abcdefghijklmnopqrstuvwxyz".split(""), c = (r, s) => {
-  let e = r + s;
-  return e > 25 && (e = e - 26), e < 0 && (e = 26 + e), e;
+const i = "abcdefghijklmnopqrstuvwxyz".split(""), d = (e, n) => {
+  let t = e + n;
+  return t > 25 && (t = t - 26), t < 0 && (t = 26 + t), t;
 };
-window.caesarCipher = (r, s) => {
-  s = s % 26;
-  const e = r.toLowerCase();
-  let o = "";
-  return Array.from(e).forEach((n, d) => {
-    if (n === " ") {
-      o += n;
+window.convertCaesarCipher = () => {
+  const e = prompt("Enter a string to be shifted") || "";
+  if (!e)
+    return alert("You must enter a string to be shifted");
+  let n = parseInt(prompt("Enter a shift amount") || "");
+  if (isNaN(n))
+    return alert("You must enter a valid shift amount");
+  n = n % 26;
+  const t = e.toLowerCase();
+  let r = "";
+  return Array.from(t).forEach((s, o) => {
+    if (s === " ") {
+      r += s;
       return;
     }
-    const t = a.indexOf(n), f = c(t, s);
-    r[d] === r[d].toUpperCase() ? o += a[f].toUpperCase() : o += a[f];
-  }), alert(o);
+    const f = i.indexOf(s), a = d(f, n);
+    e[o] === e[o].toUpperCase() ? r += i[a].toUpperCase() : r += i[a];
+  }), alert(r);
 };
