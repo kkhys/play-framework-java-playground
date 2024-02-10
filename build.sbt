@@ -1,6 +1,7 @@
 ThisBuild / scalaVersion := "3.3.1"
-
 ThisBuild / version := "1.0.0-SNAPSHOT"
+
+PlayKeys.playRunHooks += baseDirectory.map(PlayDevRunHook.apply).value
 
 lazy val root = (project in file("."))
   .enablePlugins(PlayJava)
